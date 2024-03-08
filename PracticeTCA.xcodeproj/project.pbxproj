@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245E4E2B2B9ACC2B00DA1375 /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E4E2A2B9ACC2B00DA1375 /* Multiplication.swift */; };
+		245E4E2D2B9ACC5D00DA1375 /* ArithmeticOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245E4E2C2B9ACC5D00DA1375 /* ArithmeticOperation.swift */; };
+		2475EF812B98266F00ADECF4 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2475EF802B98266F00ADECF4 /* ComposableArchitecture */; };
 		24CE6B722B9617870062124D /* PracticeTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE6B712B9617870062124D /* PracticeTCAApp.swift */; };
 		24CE6B742B9617870062124D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE6B732B9617870062124D /* ContentView.swift */; };
 		24CE6B762B9617940062124D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24CE6B752B9617940062124D /* Assets.xcassets */; };
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		245E4E2A2B9ACC2B00DA1375 /* Multiplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
+		245E4E2C2B9ACC5D00DA1375 /* ArithmeticOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticOperation.swift; sourceTree = "<group>"; };
 		24CE6B6E2B9617870062124D /* PracticeTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24CE6B712B9617870062124D /* PracticeTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeTCAApp.swift; sourceTree = "<group>"; };
 		24CE6B732B9617870062124D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2475EF812B98266F00ADECF4 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,8 @@
 			children = (
 				24CE6B712B9617870062124D /* PracticeTCAApp.swift */,
 				24CE6B732B9617870062124D /* ContentView.swift */,
+				245E4E2C2B9ACC5D00DA1375 /* ArithmeticOperation.swift */,
+				245E4E2A2B9ACC2B00DA1375 /* Multiplication.swift */,
 				24CE6B752B9617940062124D /* Assets.xcassets */,
 				24CE6B772B9617940062124D /* Preview Content */,
 			);
@@ -143,6 +151,9 @@
 			dependencies = (
 			);
 			name = PracticeTCA;
+			packageProductDependencies = (
+				2475EF802B98266F00ADECF4 /* ComposableArchitecture */,
+			);
 			productName = PracticeTCA;
 			productReference = 24CE6B6E2B9617870062124D /* PracticeTCA.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 24CE6B652B9617870062124D;
+			packageReferences = (
+				2475EF7F2B98266F00ADECF4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 24CE6B6F2B9617870062124D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +273,8 @@
 			files = (
 				24CE6B742B9617870062124D /* ContentView.swift in Sources */,
 				24CE6B722B9617870062124D /* PracticeTCAApp.swift in Sources */,
+				245E4E2B2B9ACC2B00DA1375 /* Multiplication.swift in Sources */,
+				245E4E2D2B9ACC5D00DA1375 /* ArithmeticOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -588,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2475EF7F2B98266F00ADECF4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2475EF802B98266F00ADECF4 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2475EF7F2B98266F00ADECF4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 24CE6B662B9617870062124D /* Project object */;
 }
